@@ -7,6 +7,7 @@
 ## Spotify API w/ React
 This repo contains a project w/ Spotify Api and React in which users can search artist and hear their songs.
 
+##### [Click here to my Spotify React demo][0]
 ---
 ### Installation
 
@@ -26,4 +27,5 @@ All dependencies will be installed automatically.
 * [Spotify][1]
 
 
+[0]: http://spotifyreact-fran.surge.sh/
 [1]: https://developer.spotify.com/
