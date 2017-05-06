@@ -1,0 +1,22 @@
+.container > .jumbotron {
+  margin: 40px 3px;
+  padding: 20px;
+}
+section {
+  margin-top: 15px;
+}
+label {
+  margin-right: 5px;
+}
+audio {
+  vertical-align: middle;
+}
+#select-track div p {
+  font-size: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 10px;
+  font-weight: 600;
+  color: #0B2161;
+  display: inline-block;
+}
