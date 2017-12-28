@@ -1,5 +1,6 @@
 const url = 'https://api.spotify.com/v1/';
 const clientId = '54ceda5e055145f689fef81d80325eda';
+const callback = window.location.origin;
 const headers = new Headers();
 
 // ADD and GET token from spotify API
@@ -8,7 +9,7 @@ const addToken = (token) => {
 }
 
 const getToken = () => {
-  window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${process.env.URL_BASE}/callback`;
+  window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${callback}`;
 }
 
 
