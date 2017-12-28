@@ -8,7 +8,7 @@ const addToken = (token) => {
 }
 
 const getToken = () => {
-  window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=http:localhost:3000/callback`;
+  window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${process.env.URL_BASE}/callback`;
 }
 
 
