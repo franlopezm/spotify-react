@@ -2,15 +2,19 @@
   margin: 40px 3px;
   padding: 20px;
 }
+
 section {
   margin-top: 15px;
 }
+
 label {
   margin-right: 5px;
 }
+
 audio {
   vertical-align: middle;
 }
+
 #select-track div p {
   font-size: 15px;
   padding-top: 2px;
@@ -19,4 +23,8 @@ audio {
   font-weight: 600;
   color: #0B2161;
   display: inline-block;
+}
+
+.alert {
+  margin-top: 10px;
 }

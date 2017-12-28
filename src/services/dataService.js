@@ -16,7 +16,7 @@ const fetchQuery = (url) => {
   return fetch(url, {headers})
     .then(res => {
       if (!res.ok) {
-        console.log(res);
+        return 'error';
       }
 
       return res.json()
