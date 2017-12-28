@@ -11,7 +11,7 @@ This repo contains a project w/ Spotify Api and React in which users can search 
 ---
 ### Installation
 
-* You need to have installed `NodeJS` with `npm` and `bower`.
+* You need to have installed `NodeJS` with `npm`.
 
 * Then clone this project:
 
@@ -25,7 +25,11 @@ All dependencies will be installed automatically.
 
 ### API
 * [Spotify][1]
+* [Spotify - Authorization guide][2]
+* [Spotify - Endpoint reference][3]
 
 
 [0]: http://spotifyreact-fran.surge.sh/
 [1]: https://developer.spotify.com/
+[2]: https://developer.spotify.com/web-api/authorization-guide/
+[3]: https://developer.spotify.com/web-api/endpoint-reference/
