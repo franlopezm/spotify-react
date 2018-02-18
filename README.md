@@ -1,7 +1,6 @@
 [![React](https://github.com/FransLopez/logo-images/blob/master/logos/react.png)](https://facebook.github.io/react/) 
 [![HTML5,CSS3 and JS](https://github.com/FransLopez/logo-images/blob/master/logos/html5-css3-js.png)](http://www.w3.org/) 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard) 
-[![Bootstrap](https://github.com/FransLopez/logo-images/blob/master/logos/bootstrap.png)](http://getbootstrap.com/)
 
 
 ## Spotify API w/ React
@@ -15,14 +14,33 @@ This repo contains a project w/ Spotify Api and React in which users can search 
 
 * Then clone this project:
 
-`git clone https://github.com/FransLopez/spotify-react.git`
+`git clone https://github.com/franlopezm/spotify-react.git`
 
 
 ### Run this project:
+- **Install dependencies**
+`npm install`
+
+- **Compile scss to css**
+`npm run watch-css`
+
+- **Init app**
 `npm start`
 
-All dependencies will be installed automatically.
+- **Build app**
+`npm run build`
 
+
+---
+### Dependencies:
+**[Create-react-app][4]**
+
+**[React][5]**
+
+**[Axios][6]**
+
+
+---
 ### API
 * [Spotify][1]
 * [Spotify - Authorization guide][2]
@@ -33,3 +51,6 @@ All dependencies will be installed automatically.
 [1]: https://developer.spotify.com/
 [2]: https://developer.spotify.com/web-api/authorization-guide/
 [3]: https://developer.spotify.com/web-api/endpoint-reference/
+[4]: https://github.com/facebookincubator/create-react-app
+[5]: https://reactjs.org/
+[6]: https://www.npmjs.com/package/axios
