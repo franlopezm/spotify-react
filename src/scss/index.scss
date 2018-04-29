@@ -1,0 +1,21 @@
+@import './_mixins.scss';
+@import './_vars.scss';
+
+* {
+	box-sizing : border-box;
+	font-family: $fontFamily;
+	margin     : 0;
+	padding    : 0;
+}
+
+body, html, #root {
+  bottom   : 0;
+  font-size: 17px;
+  left     : 0;
+  position : absolute;
+  right    : 0;
+  top      : 0;
+}
+
+@import '~antd/dist/antd.css';
+@import '../components/_index.scss';
