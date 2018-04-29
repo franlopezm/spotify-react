@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { dataServices } from '../../services';
 import { urlHelpers } from '../../helpers';
 
+import { Header } from '../index';
+
 import TracksList from '../TracksList';
 import ArtistSearch from '../ArtistSearch';
 import SelectList from '../SelectList';
@@ -64,7 +66,9 @@ export default class App extends Component {
     const { artists, albums, tracks, notFound } = this.state;
 
     return (
-      <div className="container">
+      <div className="app">
+        <Header />
+      {/*}
         <div className="jumbotron">
           <ArtistSearch searchArtist={this.searchArtist} notFound={notFound || false} />
 
@@ -83,7 +87,7 @@ export default class App extends Component {
           />
           
           <TracksList tracks={tracks} />
-        </div>
+        </div>*/}
       </div>
     );
   }

@@ -292,3 +292,9 @@
     color: $color;
   }
 }
+
+
+@mixin maxWidth () {
+  margin   : 0 auto;
+  max-width: 1440px;
+}

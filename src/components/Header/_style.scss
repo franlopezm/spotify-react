@@ -1,0 +1,24 @@
+.app-header {
+  .nav {
+    @include maxWidth();
+    padding: 10px 50px;
+    
+    .row_nav {
+      height: 50px;
+    }
+  }
+
+  .col_right {
+    text-align: right;
+
+    .link_github, .link_github:focus {
+      color       : $color04 ;
+      border-color: $color02;
+
+      &:hover, &:active {
+        color       : $color04;
+        border-color: $color04;
+      }
+    }
+  }
+}
