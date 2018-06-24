@@ -1,20 +1,15 @@
-[![React](https://github.com/FransLopez/logo-images/blob/master/logos/react.png)](https://facebook.github.io/react/) 
-[![HTML5,CSS3 and JS](https://github.com/FransLopez/logo-images/blob/master/logos/html5-css3-js.png)](http://www.w3.org/) 
-[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard) 
+# Spotify ReactJs 
+This repo contains a project w/ Spotify Api and React in which the user can search an artist and listen to a preview of their songs.
 
-
-## Spotify API w/ React
-This repo contains a project w/ Spotify Api and React in which users can search artist and hear their songs.
-
-##### [Click here to my Spotify React demo][0]
+##### [Click here to Spotify Reactjs demo][0]
 ---
+
+
 ### Installation
 
-* You need to have installed `NodeJS` with `npm`.
+* You need to have installed `NodeJS` and `npm`.
 
-* Then clone this project:
-
-`git clone https://github.com/franlopezm/spotify-react.git`
+* Then clone this project: `git clone https://github.com/franlopezm/spotify-react.git`.
 
 
 ### Run this project:
@@ -33,11 +28,11 @@ This repo contains a project w/ Spotify Api and React in which users can search 
 
 ---
 ### Dependencies:
-**[Create-react-app][4]**
+* **[Create-react-app][4]** 
 
-**[React][5]**
+* **[React][5]**
 
-**[Axios][6]**
+* **[Axios][6]**
 
 
 ---
