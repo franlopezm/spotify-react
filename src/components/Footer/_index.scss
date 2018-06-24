@@ -4,9 +4,16 @@
   padding: 20px 50px;
 
   .link_repo {
+    @include transition(all, 400ms);
     color: $color04;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      color: $color06;
+      text-decoration: line-through;
+    }
   }
   
   .margin_right {
