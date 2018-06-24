@@ -1,6 +1,6 @@
 {
   "short_name": "Spotify React",
-  "name": "franlopezm | Spotify React",
+  "name": "React Spotify | franlopezm",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#97DECC",
+  "theme_color": "#000000",
   "background_color": "#ffffff"
 }

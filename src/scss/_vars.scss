@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Alegreya+Sans:400,500,700');
 
-
 //FONT FAMILY
-$fontFamily: 'Alegreya Sans',    sans-serif;
+$fontFamily: 'Alegreya Sans', sans-serif;
 $fontSansSC: 'Alegreya Sans SC', $fontFamily;
-
 
 //COLOR
 $color00: #f3efe8;
@@ -12,8 +10,4 @@ $color01: #e8e1d7;
 $color02: #c1b6b4;
 $color03: #928588;
 $color04: #3f373c;
-
-
-//MEDIA QUERYS
-//Creation:   $sm: '(min-width: 600px) and (max-width: 959px)';
-//   Usage:   @media #{$sm} { rules.... }
+$color05: #ffffff;

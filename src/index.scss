@@ -1,5 +1,5 @@
-@import './_mixins.scss';
-@import './_vars.scss';
+@import './scss/_mixins';
+@import './scss/_vars';
 
 * {
 	box-sizing : border-box;
@@ -9,7 +9,7 @@
 }
 
 body, html, #root {
-  background-color: $color00;
+  background-color: $color05;
   bottom          : 0;
   color           : $color04;
   font-size       : 17px;
@@ -19,5 +19,4 @@ body, html, #root {
   top             : 0;
 }
 
-@import '~antd/dist/antd.css';
-@import '../components/_index.scss';
+@import './components/_index';
