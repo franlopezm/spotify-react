@@ -1,0 +1,16 @@
+.footer_ui {
+  @include flex-complete(space-between);
+  @include maxWidth();
+  padding: 20px 50px;
+
+  .link_repo {
+    color: $color04;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .margin_right {
+    margin-left: 20px;
+    margin-right: auto;
+  }
+}
