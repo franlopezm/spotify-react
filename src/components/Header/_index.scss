@@ -1,0 +1,65 @@
+.header_ui {
+  @include maxWidth();
+  padding: 20px 50px;
+
+  &__title {
+    color: $color02;
+    font-size: 30px;
+  }
+}
+
+/*
+  &-info {
+    @include flex-complete(space-between);
+
+    &-link_repo {
+      color      : $color04;
+      font-size  : 13px;
+      font-weight: 600;
+    }
+
+    &-margin_right {
+      margin-left : 20px;
+      margin-right: auto;
+    }
+  }
+
+  &-nav {
+
+  }
+
+
+  .right {
+    margin-left : auto;
+    margin-right: 20px;
+  }
+
+  .title a {
+    c
+  }
+
+  .link_ghost {
+    @include transition(all 0.4s);
+    @include flex-complete();
+    @include border-radius(4px);
+    border         : 1px solid $color02;
+    color          : $color04;
+    font-size      : 0;
+    height         : 40px;
+    padding        : 0 30px;
+    text-decoration: none;
+    
+    &:hover, &:active {
+      border-color: $color04;
+      font-size   : 13px;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    img {
+      max-height: 20px;
+    }
+  }
+}*/

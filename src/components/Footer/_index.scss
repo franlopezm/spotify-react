@@ -1,22 +1,27 @@
 .footer_ui {
-  @include flex-complete(space-between);
+  @include flex-complete(space-between, baseline);
+  @include transform(translateX(-50%));
   @include maxWidth();
+  bottom: 0;
+  left: 50%;
   padding: 20px 50px;
+  position: absolute;
+  width: 100%;
 
-  .link_repo {
+  &__link-repo {
     @include transition(all, 400ms);
-    color: $color04;
+    color: $color02;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
 
     &:hover {
-      color: $color06;
+      color: $color05;
       text-decoration: line-through;
     }
   }
   
-  .margin_right {
+  &__margin-right {
     margin-left: 20px;
     margin-right: auto;
   }

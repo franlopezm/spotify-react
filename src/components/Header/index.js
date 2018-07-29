@@ -1,35 +1,14 @@
-import React, { Component } from 'react';
-import { Row, Col, Button } from 'antd';
+import React from 'react';
+
+import Search from '../Search';
 
 
-export default class Header extends Component {
-  
-  render () {
-    return (
-      <header className="app-header">
-        <nav className = "nav">
-          <Row 
-            align     = "middle"
-            className = "row_nav"
-            gutter    = {2}
-            justify   = "space-between"
-            type      = "flex"
-          >
-            <Col span={12} className="col_left">
-            </Col>
-            <Col span={6} className="col_right">
-              <Button 
-                className = 'link_github'
-                ghost
-                href      = "https://github.com/franlopezm"
-                icon      = "github"
-                target    = "_blank"
-                type      = "primary"
-              >franslopezm </Button>
-            </Col>
-          </Row>
-        </nav>
-      </header>
-    )
-  }
-}
+export default () => (
+  <header className="header_ui">
+    <h1 className="header_ui__title">React Spotify</h1>
+
+    <nav className="header_ui__nav">
+      <Search />
+    </nav>
+  </header>
+);
