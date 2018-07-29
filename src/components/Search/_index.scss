@@ -1,0 +1,57 @@
+.search_ui {
+  $father  : &;
+  max-width: 80%;
+  margin   : 10px auto 0;
+  position : relative;
+  
+  @import './mixin';
+
+  &__input {
+    @include transition(all 0.4s);
+    @include border-radius(4px);
+    background-color: initial;
+    border          : 1px solid $color02;
+    color           : $color02;
+    font-size       : 20px;
+    line-height     : 35px;
+    outline         : none;
+    padding         : 0 25px 0 15px;
+    width           : 100%;
+  }
+
+  &__btn {
+    @include transition(all 0.4s);
+    @include border-radius(0 4px 4px 0);
+    background-color   : $color04;
+    background-repeat  : no-repeat;
+    background-size    : 28px;
+    background-position: center;
+    background-image   : url('/images/icon_search.png');
+    border             : 1px solid $color02;
+    cursor             : pointer;
+    height             : 100%;
+    outline            : none;
+    right              : 0;
+    position           : absolute;
+    top                : 0;
+    width              : 15%;
+  }
+
+  &__input:focus {
+    @include inputHover();
+
+    & ~ #{$father}__btn {
+      @include btnHover();
+    }
+  }
+
+  &:hover {
+    #{$father}__btn {
+      @include btnHover();
+    }
+
+    #{$father}__input {
+      @include inputHover();
+    }
+  }
+}

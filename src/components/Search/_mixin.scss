@@ -1,0 +1,14 @@
+@mixin btnHover() {
+  background-image: url('/images/icon_search_hover.png');
+  background-color: $color05;
+  border-color    : $color05;
+
+  &:hover {
+    background-color: rgba($color05, 0.5);
+  }
+}
+
+@mixin inputHover() {
+  background-color: rgba($color04, 0.8);
+  border-color    : $color05;
+}
