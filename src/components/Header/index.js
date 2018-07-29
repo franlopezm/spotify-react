@@ -1,14 +1,31 @@
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import React from 'react';
 
+import { searchActs } from '../../redux/actions';
 import Search from '../Search';
 
 
-export default () => (
-  <header className="header_ui">
-    <h1 className="header_ui__title">React Spotify</h1>
+const Header = ({ dispatch }) => {
+  const onSearch = bindActionCreators(searchActs, dispatch);
 
-    <nav className="header_ui__nav">
-      <Search />
-    </nav>
-  </header>
-);
+  return (
+    <header className="header_ui">
+      <h1 className="header_ui__title">
+        <span
+          onClick={() => onSearch.reset()}
+          role="button"
+          tabIndex={0}
+        >React Spotify
+        </span>
+      </h1>
+
+      <nav className="header_ui__nav">
+        <Search />
+      </nav>
+    </header>
+  );
+};
+
+
+export default connect()(Header);

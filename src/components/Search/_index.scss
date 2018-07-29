@@ -1,8 +1,9 @@
 .search_ui {
   $father  : &;
-  max-width: 80%;
+  max-width: 700px;
   margin   : 10px auto 0;
   position : relative;
+  width: 80%;
   
   @import './mixin';
 
