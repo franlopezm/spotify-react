@@ -9,11 +9,11 @@
 }
 
 body, html, #root {
-  background-color: $color05;
-  bottom          : 0;
-  color           : $color04;
+  background-color: $color01;
+  color           : $color00;
   font-size       : 17px;
   left            : 0;
+  min-height      : 100%;
   position        : absolute;
   right           : 0;
   top             : 0;
