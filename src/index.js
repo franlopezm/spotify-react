@@ -1,20 +1,19 @@
 import { HashRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
-import store from './redux';
+import Root from './components/Root';
 import App from './components/App';
 
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Root>
     <HashRouter>
       <App />
     </HashRouter>
-  </Provider>,
+  </Root>,
   document.getElementById('root')
 );
 
