@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-import { dataServices } from '../../services';
+import api from '../../api';
 import { urlHelp } from '../../utils';
 
 
@@ -15,11 +15,11 @@ export default class Root extends Component {
     const hashParams = urlHelp.getHashParams();
 
     if (!hashParams.access_token) {
-      dataServices.getToken();
+      api.auth.getToken();
     } else {
       window.history.replaceState({}, '', '/#/');
 
-      dataServices.addToken(hashParams.access_token);
+      api.auth.addToken(hashParams.access_token);
       this.setState({ loading: false });
     }
   }
