@@ -1,10 +1,19 @@
 import { withRouter, Switch, Route } from 'react-router-dom';
 import React, { Component } from 'react';
 
+import RouteParams from './RouteParams';
 import { Header, Footer, Home, SearchList } from '..';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+
+  }
+
   render() {
     return (
       <div className="app">
@@ -12,7 +21,7 @@ class App extends Component {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/search/:text" component={SearchList} />
+          <RouteParams exact path="/search/:text" component={SearchList} />
         </Switch>
 
         <Footer />
