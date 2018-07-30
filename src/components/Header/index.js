@@ -1,31 +1,75 @@
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import React from 'react';
+import { withRouter } from 'react-router-dom';
+import React, { Component } from 'react';
 
-import { searchActs } from '../../redux/actions';
-import Search from '../Search';
+import { SearchInput } from '../common';
 
 
-const Header = ({ dispatch }) => {
-  const onSearch = bindActionCreators(searchActs, dispatch);
+class Header extends Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <header className="header_ui">
-      <h1 className="header_ui__title">
-        <span
-          onClick={() => onSearch.reset()}
-          role="button"
-          tabIndex={0}
-        >React Spotify
-        </span>
-      </h1>
+    this.state = { oldText: '' };
 
-      <nav className="header_ui__nav">
-        <Search />
-      </nav>
-    </header>
-  );
-};
+    this.onClick = this.onClick.bind(this);
+  }
+
+  componentDidMount() {
+    this.checkUrlParams();
+  }
+
+  onClick(e, text = undefined) {
+    const { history, location: { pathname } } = this.props;
+    const route = `/${text ? `search/${text}` : ''}`;
 
 
-export default connect()(Header);
+    if (route !== pathname) {
+      if (!text) {
+        this.setState({ oldText: '' });
+      }
+
+      history.push(route);
+    }
+  }
+
+  checkUrlParams() {
+    const { location: { pathname } } = this.props;
+
+    if (pathname.indexOf('/search/') !== -1) {
+      const oldText = pathname.replace(/\/search\//, '').trim();
+
+      if (oldText) {
+        this.setState({ oldText });
+      }
+    }
+  }
+
+
+  render() {
+    const { oldText } = this.state;
+
+
+    return (
+      <header className="header_ui">
+        <h1 className="header_ui__title">
+          <span
+            onClick={this.onClick}
+            role="button"
+            tabIndex={0}
+          >React Spotify
+          </span>
+        </h1>
+
+        <nav className="header_ui__nav">
+          <SearchInput
+            key={oldText || 'search'}
+            text={oldText}
+            onClick={this.onClick}
+          />
+        </nav>
+      </header>
+    );
+  }
+}
+
+
+export default withRouter(Header);

@@ -6,6 +6,9 @@
     color: $color02;
     font-size: 30px;
     
-    span { cursor: pointer; }
+    span { 
+      cursor: pointer;
+      outline: none;
+    }
   }
 }
