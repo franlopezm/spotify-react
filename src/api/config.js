@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Configuration for the spotify api endpoint
+ */
+
 export default {
   urlBase: 'https://api.spotify.com/v1/',
   urlAuth: 'https://accounts.spotify.com/authorize',
