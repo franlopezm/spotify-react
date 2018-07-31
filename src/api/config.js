@@ -9,5 +9,5 @@ export default {
   redirectUri: window.location.origin,
   responseType: 'token',
   scope: '',
-  showDialog: true
+  showDialog: false
 };
