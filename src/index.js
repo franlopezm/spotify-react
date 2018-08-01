@@ -4,16 +4,21 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
-import Root from './components/Root';
+import AuthGrantFlowSpotify from './components/AuthGrantFlowSpotify';
 import App from './components/App';
+
+import config from './api/config';
 
 
 ReactDOM.render(
-  <Root>
+  <AuthGrantFlowSpotify
+    clientId="54ceda5e055145f689fef81d80325eda"
+    onSuccess={config.addHeadersToken}
+  >
     <HashRouter>
       <App />
     </HashRouter>
-  </Root>,
+  </AuthGrantFlowSpotify>,
   document.getElementById('root')
 );
 
