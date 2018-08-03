@@ -5,29 +5,17 @@ import RouteParams from './RouteParams';
 import { Header, Footer, Home, SearchList } from '..';
 
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-  }
+const App = () => (
+  <div className="app">
+    <Header />
 
-  componentDidMount() {
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <RouteParams exact path="/search/:text" component={SearchList} />
+    </Switch>
 
-  }
-
-  render() {
-    return (
-      <div className="app">
-        <Header />
-
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <RouteParams exact path="/search/:text" component={SearchList} />
-        </Switch>
-
-        <Footer />
-      </div>
-    );
-  }
-}
+    <Footer />
+  </div>
+);
 
 export default withRouter(App);
