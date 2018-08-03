@@ -40,7 +40,6 @@ export default class List extends Component {
 
 
     api.search(text, type, offset, (error, res) => {
-      console.log('​List -> getData -> res', res);
       if (res.status === 200) {
         const { data: { [`${type}s`]: { items, total } } } = res;
 

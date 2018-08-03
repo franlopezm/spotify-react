@@ -17,6 +17,7 @@
 
     button {
       @include border-radius(4px);
+      background-color: initial;
       border: 1px solid $color03;
       color: $color05;
       cursor: pointer;
@@ -43,9 +44,16 @@
   border: 1px solid $color01;
   cursor: pointer;
   margin: 0 1% 10px;
-  max-width: 30%;
   padding: 5px 8px;
   width: 30%;
+
+  @media #{$sm} {
+    width: 47%;
+  }
+
+  @media #{$xss} {
+    width: 100%;
+  }
 
   &:hover {
     border-color: $color05;

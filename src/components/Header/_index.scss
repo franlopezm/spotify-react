@@ -2,9 +2,17 @@
   @include maxWidth();
   padding: 20px 50px;
 
+  @media #{$xs} {
+    padding: 10px 20px;
+  }
+
   &__title {
     color: $color02;
     font-size: 30px;
+
+    @media #{$xs} {
+      font-size: 25px;
+    }
     
     span { 
       cursor: pointer;

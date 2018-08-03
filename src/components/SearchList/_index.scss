@@ -1,4 +1,8 @@
 .search_list_ui {
   @include maxWidth();
   padding: 30px 0 20px;
+
+  @media #{$xs} {
+    padding: 10px 0 0;
+  }
 }

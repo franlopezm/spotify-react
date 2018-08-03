@@ -3,12 +3,21 @@
   font-size: 30px;
   text-align: center;
 
+  @media #{$xs} {
+    font-size: 20px;
+  }
+
   &__title {
     color: $color02;
     font-family: $fontSansSC;
     line-height: 60px;
     margin: 50px auto 0;
     max-width: 340px;
+
+    @media #{$xs} {
+      line-height: 40px;
+      max-width: 250px;
+    }
 
     &-one {
       color: $color03;

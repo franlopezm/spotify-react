@@ -1,17 +1,17 @@
 .link_ghost_ui {
-  @include border-radius(4px);
+  @include border-radius(5px);
   @include flex-complete();
   @include transition(font-size 0.5s);
   border         : 1px solid $color02;
   color          : $color05;
   font-size      : 0;
-  height         : 40px;
-  padding        : 0 30px;
+  height         : 30px;
+  padding        : 0 20px;
   text-decoration: none;
-    
+
   &:hover, &:active {
     border-color: $color05;
-    font-size   : 15px;
+    font-size   : 14px;
 
     img {
       margin-right: 10px;
@@ -19,6 +19,6 @@
   }
 
   img {
-    max-height: 20px;
+    max-height: 15px;
   }
 }
