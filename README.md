@@ -40,7 +40,7 @@ An application example connected to the Spotify Web API, allowing searches in th
 * [Spotify - Endpoint reference][3]
 
 
-[0]: https://spotifyreact-fran.surge.sh
+[0]: https://franlopezm-spotify.surge.sh
 [1]: https://developer.spotify.com/
 [2]: https://developer.spotify.com/web-api/authorization-guide/
 [3]: https://developer.spotify.com/web-api/endpoint-reference/
