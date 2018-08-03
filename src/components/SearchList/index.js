@@ -1,21 +1,39 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 
-export default class SearchList extends Component {
-  render() {
-    const { text, match } = this.props;
-    console.log('​Home -> render -> this.props', match);
-
-    if (!text) return null;
-
-    return (
-      <div />
-    );
-  }
-}
+import { Lists } from '../common';
 
 
-SearchList.propTypes = { text: PropTypes.string };
+export default (props) => {
+  const { text } = props;
 
+  return (
+    <div
+      key={text}
+      className="search_list_ui"
+    >
+      <Lists
+        text={text}
+        title="Artists"
+        type="artist"
+      />
 
-SearchList.defaultProps = { text: '' };
+      <Lists
+        text={text}
+        title="Albums"
+        type="album"
+      />
+
+      <Lists
+        text={text}
+        title="Playlists"
+        type="playlist"
+      />
+
+      <Lists
+        text={text}
+        title="Tracks"
+        type="track"
+      />
+    </div>
+  );
+};
