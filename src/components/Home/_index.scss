@@ -1,0 +1,28 @@
+.home {
+  @include maxWidth();
+  font-size: 30px;
+  text-align: center;
+
+  &__title {
+    color: $color02;
+    font-family: $fontSansSC;
+    line-height: 60px;
+    margin: 50px auto 0;
+    max-width: 340px;
+
+    &-one {
+      color: $color03;
+    }
+    &-two {
+      @include text-shadow(0 0 5px $color02);
+      color: $color04;
+    }
+    &-three {
+      color: $color05;
+    }
+    &-four {
+      @include text-shadow(0 0 5px $color02);
+      color: $color01;
+    }
+  }
+}

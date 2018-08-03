@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const Item = ({ item }) => {
   const name = _.get(item, 'name', '');
   const followers = _.get(item, 'followers.total');
-  const image = _.get(item, 'images.0.url');
+  const image = _.get(item, 'images.0.url', _.get(item, 'album.images.0.url'));
   const artists = _.get(item, 'artists', []).map(elem => elem.name);
   const date = _.get(item, 'release_date');
 

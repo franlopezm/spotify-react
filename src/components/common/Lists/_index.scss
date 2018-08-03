@@ -12,8 +12,28 @@
     padding: 0 10px;
   }
 
-  &__not {
+  &__btn {
+    text-align: center;
 
+    button {
+      @include border-radius(4px);
+      border: 1px solid $color03;
+      color: $color05;
+      cursor: pointer;
+      font-size: 14px;
+      outline: none;
+      padding: 8px 20px;
+
+      &:hover {
+        border: 1px solid $color05;
+        color: $color03;
+      }
+    }
+  }
+
+  &__not {
+    padding: 5px 10px;
+    font-weight: 500;
   }
 }
 

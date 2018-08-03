@@ -1,5 +1,5 @@
 import { withRouter, Switch, Route } from 'react-router-dom';
-import React, { Component } from 'react';
+import React from 'react';
 
 import RouteParams from './RouteParams';
 import { Header, Footer, Home, SearchList } from '..';

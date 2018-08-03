@@ -12,19 +12,30 @@ export default class List extends Component {
     this.state = {
       items: [],
       loading: true,
+      loadingMore: false,
       offset: 0,
       total: 0
     };
 
     this.getData = this.getData.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
 
   componentDidMount() {
     this.getData();
   }
 
-  getData() {
-    const { items: oldItems, offset } = this.state;
+  onClick() {
+    const { loadingMore, offset } = this.state;
+
+    if (loadingMore) return;
+
+    this.setState({ loadingMore: true });
+    this.getData(offset + 1);
+  }
+
+  getData(offset = 0) {
+    const { items: oldItems } = this.state;
     const { text, type } = this.props;
 
 
@@ -35,7 +46,9 @@ export default class List extends Component {
 
         this.setState({
           loading: false,
+          loadingMore: false,
           items: [...oldItems, ...items],
+          offset,
           total
         });
         return;
@@ -47,7 +60,7 @@ export default class List extends Component {
 
 
   render() {
-    const { loading, items, total } = this.state;
+    const { loading, loadingMore, items, total } = this.state;
     const { title } = this.props;
 
     const numItems = items.length;
@@ -57,7 +70,7 @@ export default class List extends Component {
 
     return (
       <div className="items_list_ui">
-        { title && <h4 className="items_list_ui__title">{title}</h4> }
+        { title && <h4 className="items_list_ui__title">{title} <span>{`${numItems}/${total}`}</span></h4> }
 
         {
           numItems > 0
@@ -67,6 +80,20 @@ export default class List extends Component {
               </div>
             )
             : <div className="items_list_ui__not">There are no items for this search.</div>
+        }
+
+        {
+          numItems > 0 && total > numItems ? (
+            <div
+              className="items_list_ui__btn"
+            >
+              <button
+                type="button"
+                onClick={this.onClick}
+              >{loadingMore ? 'Loading...' : 'Load More'}
+              </button>
+            </div>
+          ) : null
         }
       </div>
     );
