@@ -1,5 +1,5 @@
 # Spotify ReactJs 
-This repo contains a project w/ Spotify Api and React in which the user can search an artist and listen to a preview of their songs.
+An application example connected to the Spotify Web API, allowing searches in the music catalog of Spotify.
 
 ##### [Click here to Spotify Reactjs demo][0]
 ---
@@ -28,11 +28,9 @@ This repo contains a project w/ Spotify Api and React in which the user can sear
 
 ---
 ### Dependencies:
-* **[Create-react-app][4]** 
-
-* **[React][5]**
-
-* **[Axios][6]**
+* **[create-react-app][4]** 
+* **[axios][6]**
+* **[lodash][5]** 
 
 
 ---
@@ -47,5 +45,5 @@ This repo contains a project w/ Spotify Api and React in which the user can sear
 [2]: https://developer.spotify.com/web-api/authorization-guide/
 [3]: https://developer.spotify.com/web-api/endpoint-reference/
 [4]: https://github.com/facebookincubator/create-react-app
-[5]: https://reactjs.org/
+[5]: https://lodash.com/
 [6]: https://www.npmjs.com/package/axios
