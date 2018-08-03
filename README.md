@@ -1,4 +1,4 @@
-# Spotify ReactJs 
+# Spotify React 
 An application example connected to the Spotify Web API, allowing searches in the music catalog of Spotify.
 
 ##### [Click here to Spotify Reactjs demo][0]
