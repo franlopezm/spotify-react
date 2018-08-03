@@ -10,7 +10,7 @@ export default (textSearch = '', type = 'track', offset = 0, callback) => {
   const params = {
     limit: 21,
     offset: offset * 21,
-    q: encodeURI(textSearch),
+    q: textSearch,
     type // : 'album,artist,playlist,track',
   };
 
