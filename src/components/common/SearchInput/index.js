@@ -6,10 +6,11 @@ export default class SearchInput extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { text: props.text };
+    this.state = { text: '' };
 
     this.onChange = this.onChange.bind(this);
     this.onClick = this.onClick.bind(this);
+    this.onKeyPress = this.onKeyPress.bind(this);
   }
 
   onChange(e) {
@@ -27,6 +28,11 @@ export default class SearchInput extends Component {
     }
   }
 
+  onKeyPress({ charCode }) {
+    if (charCode === 13) {
+      this.onClick('');
+    }
+  }
 
   render() {
     const { text } = this.state;
@@ -37,8 +43,9 @@ export default class SearchInput extends Component {
         <input
           className="search_ui__input"
           onChange={this.onChange}
-          placeholder="Search an artist, album, track..."
+          placeholder="Search an artist, album, track, playlist..."
           type="text"
+          onKeyPress={this.onKeyPress}
           value={text}
         />
 
@@ -53,9 +60,4 @@ export default class SearchInput extends Component {
 }
 
 
-SearchInput.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  text: PropTypes.string
-};
-
-SearchInput.defaultProps = { text: '' };
+SearchInput.propTypes = { onClick: PropTypes.func.isRequired };
