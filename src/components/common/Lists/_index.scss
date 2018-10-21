@@ -42,7 +42,6 @@
   @include border-radius(4px);
   @include flex-complete();
   border: 1px solid $color01;
-  cursor: pointer;
   margin: 0 1% 10px;
   padding: 5px 8px;
   width: 30%;
@@ -53,10 +52,6 @@
 
   @media #{$xss} {
     width: 100%;
-  }
-
-  &:hover {
-    border-color: $color05;
   }
 
   &__img {
