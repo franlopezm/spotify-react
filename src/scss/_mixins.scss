@@ -221,7 +221,7 @@
   align-self        : $align;
 }
 
-@mixin flex-complete ($justify: start, $align: center, $wrap: nowrap, $direction: row) {
+@mixin flex-complete ($justify: flex-start, $align: center, $wrap: nowrap, $direction: row) {
   @include display-flex();
   @include justify-content($justify);
   @include align-items($align);
@@ -229,11 +229,11 @@
   @include flex-direction($direction);
 }
 
-@mixin calc($property, $expression) { 
+@mixin calc($property, $expression) {
   #{$property}: -webkit-calc(#{$expression});
   #{$property}: -moz-calc(#{$expression});
   #{$property}: calc(#{$expression});
-} 
+}
 
 @mixin grayscale($percentage){
   -webkit-filter: grayscale($percentage);
