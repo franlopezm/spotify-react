@@ -1,4 +1,4 @@
-# Spotify React 
+# Spotify React
 An application example connected to the Spotify Web API, allowing searches in the music catalog of Spotify.
 
 ##### [Click here to Spotify Reactjs demo][0]
@@ -27,13 +27,16 @@ An application example connected to the Spotify Web API, allowing searches in th
 
 
 ---
-### Dependencies:
-* **[create-react-app][4]** 
-* **[axios][6]**
-* **[lodash][5]** 
+### Deploy for [surge][7]
+- `npm run deploy`
 
 
 ---
+### Dependencies:
+* **[create-react-app][4]**
+* **[axios][6]**
+* **[lodash][5]**
+
 ### API
 * [Spotify][1]
 * [Spotify - Authorization guide][2]
@@ -47,3 +50,4 @@ An application example connected to the Spotify Web API, allowing searches in th
 [4]: https://github.com/facebookincubator/create-react-app
 [5]: https://lodash.com/
 [6]: https://www.npmjs.com/package/axios
+[7]: https://www.freecodecamp.org/news/surge-vs-github-pages-deploying-a-create-react-app-project-c0ecbf317089/
