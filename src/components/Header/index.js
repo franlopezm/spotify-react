@@ -15,7 +15,6 @@ class Header extends Component {
     const { history, location: { pathname } } = this.props;
     const route = `/${text ? `search/${text}` : ''}`;
 
-
     if (route !== pathname) {
       history.push(route);
     }
